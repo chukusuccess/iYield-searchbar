@@ -1,5 +1,5 @@
-import { Typography, Button, Box, Container } from "@mui/material";
 import React from "react";
+import { Typography, Button, Box, Container } from "@mui/material";
 
 type IErrorProp = {
   error: string | React.ReactNode;

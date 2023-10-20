@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
     const secondLetterUppercase: Boolean = /[A-Z]/.test(input[1]); // test if the second character is uppercase
 
     // filter countries array based on country code input
-    const filterCountryCode = () => {
+    const filterCountriesByCode = () => {
       const filteredCountries: ICountry[] = data!.filter((country) => {
         const searchString: string =
           firstLetterUppercase && secondLetterUppercase ? input : input.toUpperCase();
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
     };
 
     // filter countries array based on country name input
-    const filterCountryName = () => {
+    const filterCountriesByName = () => {
       const filteredCountries: ICountry[] = data!.filter((country) => {
         const searchString: string = firstLetterUppercase && !secondLetterUppercase ? input : input;
         return country.name.common.includes(searchString);
@@ -65,10 +65,10 @@ const HomePage: React.FC = () => {
 
     // if-block calls a filtration method. TODO: Refactor
     if (firstLetterUppercase && secondLetterUppercase) {
-      filterCountryCode();
+      filterCountriesByCode();
       return;
     } else if (firstLetterUppercase && !secondLetterUppercase) {
-      filterCountryName();
+      filterCountriesByName();
       return;
     } else {
       const filteredCountries: ICountry[] = data!.filter((country) => {
