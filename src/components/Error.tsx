@@ -1,8 +1,6 @@
 import { Typography, Button, Box, Container } from "@mui/material";
 import React from "react";
 
-export const ERROR_PAGE_TEST_ID = "ERROR_PAGE_TEST_ID";
-
 type IErrorProp = {
   error: string | React.ReactNode;
 };
@@ -42,5 +40,7 @@ const ErrorScreen: React.FC<IErrorProp> = ({ error }) => {
     </Container>
   );
 };
+
+export const ERROR_PAGE_TEST_ID = "ERROR_PAGE_TEST_ID";
 
 export default ErrorScreen;

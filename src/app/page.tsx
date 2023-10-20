@@ -20,10 +20,6 @@ import { ICountry } from "@/types/countriesData.type";
 import { useGetCountries } from "@/hooks/useGetCountries";
 import splash from "../images/worldmap.png";
 
-// exporting unit test-id for Jest Testing Library
-export const HOME_TEST_ID = "HOME_TEST_ID";
-export const LIST_ITEM_TEST_ID = "LIST_ITEM_TEST_ID";
-
 const HomePage: React.FC = () => {
   const [userInput, setUserInput] = React.useState<string>("");
   const [results, setResults] = React.useState<ICountry[]>([]);
@@ -210,5 +206,9 @@ const HomePage: React.FC = () => {
     </>
   );
 };
+
+// exporting unit test-id for Jest Testing Library
+export const HOME_TEST_ID = "HOME_TEST_ID";
+export const LIST_ITEM_TEST_ID = "LIST_ITEM_TEST_ID";
 
 export default HomePage;

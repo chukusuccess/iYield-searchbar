@@ -3,9 +3,6 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import { ISearchBar } from "@/types/searchbar.type";
 
-// exporting unit test-id for Jest Testing Library
-export const SEARCH_TEST_ID = "SEARCH_TEST_ID";
-
 const SearchBar = (props: ISearchBar) => {
   const { label, onChange, variant, value, size } = props; // props destructuring
 
@@ -53,5 +50,8 @@ const SearchBar = (props: ISearchBar) => {
     </>
   );
 };
+
+// exporting unit test-id for Jest Testing Library
+export const SEARCH_TEST_ID = "SEARCH_TEST_ID";
 
 export default SearchBar;

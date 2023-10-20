@@ -27,5 +27,5 @@ jobs:
           command: npm test
 
       - run:
-          name: Build React App
+          name: Build Next App
           command: npm run build
