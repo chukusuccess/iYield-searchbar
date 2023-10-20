@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:14
+      - image: cimg/node:21.0.0
 
     working_directory: ~/app
 
@@ -27,5 +27,5 @@ jobs:
           command: npm test
 
       - run:
-          name: next build
+          name: Build React App
           command: npm run build
