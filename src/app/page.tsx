@@ -90,7 +90,7 @@ const HomePage: React.FC = () => {
     <>
       {hideSplash === false ? (
         <Container
-          data-testid={HOME_TEST_ID}
+          data-testid={"HOME_TEST_ID"}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -191,7 +191,7 @@ const HomePage: React.FC = () => {
                       <Skeleton variant="text" sx={{ fontSize: "1rem" }} animation="wave" />
                     ) : (
                       <ListItemText
-                        data-testid={LIST_ITEM_TEST_ID}
+                        data-testid={"LIST_ITEM_TEST_ID"}
                         sx={{ color: "primary.main" }}
                         primary={country.name.common}
                       />
@@ -206,9 +206,5 @@ const HomePage: React.FC = () => {
     </>
   );
 };
-
-// exporting unit test-id for Jest Testing Library
-export const HOME_TEST_ID = "HOME_TEST_ID";
-export const LIST_ITEM_TEST_ID = "LIST_ITEM_TEST_ID";
 
 export default HomePage;

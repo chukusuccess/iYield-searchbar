@@ -1,13 +1,13 @@
 import "@testing-library/jest-dom";
-import { render, screen, fireEvent } from "@testing-library/react";
-import HomePage, { HOME_TEST_ID } from "@/app/page";
+import { render, screen } from "@testing-library/react";
+import HomePage from "@/app/page";
 import { mockData } from "@/dummyData";
 import { ICountry } from "@/types/countriesData.type";
 
 describe("Home page", () => {
   it("renders Home page", async () => {
     render(<HomePage />);
-    const Container = screen.getByTestId(HOME_TEST_ID);
+    const Container = screen.getByTestId("HOME_TEST_ID");
     expect(Container).toBeInTheDocument(); // HomePage is rendered
   });
 
