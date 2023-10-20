@@ -1,6 +1,6 @@
 # Country Finder
 
-[Country Finder](https://country-finder.vercel.app/) implements a `case-sensitive` or `case-insensitive` custom search behaviour that is described as follows:
+[Country Finder](https://iyield-searchbar.vercel.app/) implements a `case-sensitive` or `case-insensitive` custom search behaviour that is described as follows:
 
 - If a user enters their search term in lowercase it performs a **case-insensitive**
   search.
@@ -91,4 +91,4 @@ source directory
 
 ## Deployment
 
-App is live! deployed on: Vercel view here: [https://country-finder.vercel.app/](https://country-finder.vercel.app/)
+App is live! deployed on: Vercel view here: [Country Finder](https://iyield-searchbar.vercel.app/)
